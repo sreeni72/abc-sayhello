@@ -32,6 +32,18 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>muser13</username>
+						<password>Lakshmi@1</password>
+						<applicationName>${project.artifactId}</applicationName>
+						<environment>dev</environment>
+						<region>us-east-1</region>
+						<workers>1</workers>
+						<workerType>MICRO</workerType>
+						<objectStoreV2>true</objectStoreV2>						
+					</cloudHubDeployment>
+					<!-- <cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0</muleVersion>
 						<username>muser13</username>
 						<password>Lakshmi@1</password>
@@ -47,7 +59,7 @@
 							<!-- <anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
 							<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret> -->
 						</properties>
-					</cloudHubDeployment>									
+					</cloudHubDeployment>		-->							
 				</configuration>
 			</plugin>
 		</plugins>
